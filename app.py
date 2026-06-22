@@ -8,7 +8,15 @@ import random
 # ==========================================
 # 🔑 PASTE YOUR ACTUAL GEMINI API KEY HERE
 # ==========================================
-API_KEY = "your-api-key"
+# ==========================================
+# 🔑 SECURE API MANAGEMENT FOR CLOUD DEPLOYMENT
+# ==========================================
+try:
+    # This automatically pulls the key from Streamlit's secure dashboard settings
+    API_KEY = st.secrets["GEMINI_API_KEY"]
+except Exception:
+    # Fallback placeholder if running locally
+    API_KEY = "YOUR_GEMINI_API_KEY_HERE"
 
 # Initialize the Gemini Client
 client = genai.Client(api_key=API_KEY)
