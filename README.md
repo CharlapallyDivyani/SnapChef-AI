@@ -23,3 +23,8 @@ Follow these simple steps to run this project on your local computer:
 2. Install dependencies: `pip install streamlit google-genai pillow`
 3. Open `app.py` and paste your Gemini API key into the `API_KEY` variable.
 4. Run the app: `streamlit run app.py`
+
+
+🌐 **Live Website Link:** [👉 Click here to open the live SnapChef AI Application](https://snapchef-ai-eepkyucdb9uvkyv7lf7k4n.streamlit.app/)
+
+SnapChef AI is an interactive, full-stack Applied Artificial Intelligence web application built using Python, Streamlit, and the Google Gemini 2.5 Flash model. The app allows users to capture or upload food images, instantly analyze their nutritional value, get a step-by-step cooking recipe, and chat with an AI assistant with real-time context.
