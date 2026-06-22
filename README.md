@@ -19,7 +19,7 @@ The system is engineered across three functional pillars:
 
 Follow these simple steps to run this project on your local computer:
 
-### 1. Prerequisites
-Make sure you have Python installed. Then, open your terminal and install the required dependencies:
-```bash
-pip install streamlit google-genai pillow
+1. Clone this repository.
+2. Install dependencies: `pip install streamlit google-genai pillow`
+3. Open `app.py` and paste your Gemini API key into the `API_KEY` variable.
+4. Run the app: `streamlit run app.py`
