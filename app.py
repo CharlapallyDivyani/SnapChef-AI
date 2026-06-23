@@ -206,7 +206,7 @@ with tab2:
         st.session_state.chat_messages.append({"role": "user", "content": user_chat})
         
         prompt = f"Context: The user is looking at {st.session_state.dish_context}. Question: {user_chat}"
-        response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
+        response = client.models.generate_content(model="gemini-1.5-flash", contents=prompt)
         
         st.session_state.chat_messages.append({"role": "assistant", "content": response.text})
         st.rerun()
