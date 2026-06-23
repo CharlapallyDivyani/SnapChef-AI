@@ -134,7 +134,7 @@ with tab1:
                     img_base64 = base64.b64encode(img_byte_arr.getvalue()).decode()
                     
                     response = client.models.generate_content(
-                        model="gemini-2.5-flash",
+                        model="gemini-1.5-flash",
                         contents=[
                             {"inline_data": {"mime_type": "image/png", "data": img_base64}},
                             {"text": FOOD_PROMPT}
