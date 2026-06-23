@@ -134,7 +134,7 @@ with tab1:
                     img_base64 = base64.b64encode(img_byte_arr.getvalue()).decode()
                     
                     response = client.models.generate_content(
-                        model="gemini-2.0-flash",
+                        model="gemini-2.5-flash",
                         contents=[
                             {"inline_data": {"mime_type": "image/png", "data": img_base64}},
                             {"text": FOOD_PROMPT}
@@ -206,7 +206,7 @@ with tab2:
         st.session_state.chat_messages.append({"role": "user", "content": user_chat})
         
         prompt = f"Context: The user is looking at {st.session_state.dish_context}. Question: {user_chat}"
-        response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
+        response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
         
         st.session_state.chat_messages.append({"role": "assistant", "content": response.text})
         st.rerun()
